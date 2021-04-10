@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <title>Главная - TechNews</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script>(function($) {
+      <script>(function($) {
 $(function() {
 
 	$('#up').click(function() {
@@ -16,35 +16,18 @@ $(function() {
 
 })
 })(jQuery)</script>
-      
-                <script>
-                    let dark = false;
+        <script>
             (function($) {
 $(function() {
         $(".change").on("click", function() {
-  if (!$(".hdr").attr("hdr")) {
-    $(".hdr").attr("hdr", "true");
+  if (!$(".content").attr("dark")) {
+    $(".content").attr("dark", "true");
   } else {
-    $(".hdr").removeAttr("hdr");
+    $(".content").removeAttr("dark");
 
   
 }}
         )})})(jQuery)</script>
-                <script>
-            (function($) {
-$(function() {
-        $(".change").on("click", function() {
-  if (!$("#content").attr("dark")) {
-      dark = true;
-    $("#content").attr("dark", "true");
-  } else {
-    $("#content").removeAttr("dark");
-
-  
-}}
-        )})})(jQuery)
-        
-        </script>
         <script>
         /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -67,16 +50,39 @@ window.onclick = function(event) {
   }
 }
         </script>
-        
+         <script>
+            (function($) {
+$(function() {
+        $(".change").on("click", function() {
+  if (!$(".hdr").attr("hdr")) {
+    $(".hdr").attr("hdr", "true");
+  } else {
+    $(".hdr").removeAttr("hdr");
+
+  
+}}
+        )})})(jQuery)</script>
+            <script>
+            (function($) {
+$(function() {
+        $(".change").on("click", function() {
+  if (!$("#hdr").attr("hdr")) {
+    $("#hdr").attr("hdr", "true");
+  } else {
+    $("#hdr").removeAttr("hdr");
+
+  
+}}
+        )})})(jQuery)</script>
    <style>html[dark]:not([style-scope]) :not(.style-scope),
 [dark]:not([style-scope]):not(.style-scope) {
   background-color: #222;
 color:white;
 box-shadow: 0px 0px 0px 0px;
-   
+
 }
 
-[dark] +:not([style-scope]) :not(.style-scope)  :not([style-scope]):not(.style-scope) :not(.style-scope ) :not(.style-scope)   {
+[dark] :not([style-scope]):not(.style-scope) :not([style-scope]) :not(.style-scope):not(.style-scope ):not(.style-scope)   {
 background-color: #333;
    color:white;
 box-shadow: 0px 0px 0px 0px;
@@ -85,27 +91,20 @@ box-shadow: 0px 0px 0px 0px;
 
     
 }   
-       [dark]:not([style-scope]) +:not(.style-scope) +:not([style-scope]) +:not(.style-scope) :not(.style-scope)  {
-background-color: #333;
-   color:white;
-bo
-    
 
-    
-}  
        
-       [dark] +:not([style-scope]) +:not(.style-scope) +:not([style-scope]) +:not(.style-scope)  {
+       [dark] :not([style-scope]) +:not(.style-scope) +:not([style-scope]) +:not(.style-scope)  {
 color:white;
    background-color: #333;
    box-shadow: 0px 0px 0px 0px;
-  
+
 
 }  
-            [hdr]:not([style-scope]):not(.style-scope):not([style-scope]) :not(.style-scope)  {
+                 [hdr]:not([style-scope]):not(.style-scope):not([style-scope]) :not(.style-scope)  {
 color:white;
    background-color: #333;
    box-shadow: 0px 0px 0px 0px;
-  
+
 
 }  
       </style>
