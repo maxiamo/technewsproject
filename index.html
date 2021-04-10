@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <title>Главная - TechNews</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script>(function($) {
+        <script>(function($) {
 $(function() {
 
 	$('#up').click(function() {
@@ -24,6 +24,30 @@ $(function() {
     $(".content").attr("dark", "true");
   } else {
     $(".content").removeAttr("dark");
+
+  
+}}
+        )})})(jQuery)</script>
+                <script>
+            (function($) {
+$(function() {
+        $(".change").on("click", function() {
+  if (!$(".hdr").attr("hdr")) {
+    $(".hdr").attr("hdr", "true");
+  } else {
+    $(".hdr").removeAttr("hdr");
+
+  
+}}
+        )})})(jQuery)</script>
+                <script>
+            (function($) {
+$(function() {
+        $(".change").on("click", function() {
+  if (!$("#content").attr("dark")) {
+    $("#content").attr("dark", "true");
+  } else {
+    $("#content").removeAttr("dark");
 
   
 }}
@@ -50,30 +74,7 @@ window.onclick = function(event) {
   }
 }
         </script>
-         <script>
-            (function($) {
-$(function() {
-        $(".change").on("click", function() {
-  if (!$(".hdr").attr("hdr")) {
-    $(".hdr").attr("hdr", "true");
-  } else {
-    $(".hdr").removeAttr("hdr");
-
-  
-}}
-        )})})(jQuery)</script>
-            <script>
-            (function($) {
-$(function() {
-        $(".change").on("click", function() {
-  if (!$("#hdr").attr("hdr")) {
-    $("#hdr").attr("hdr", "true");
-  } else {
-    $("#hdr").removeAttr("hdr");
-
-  
-}}
-        )})})(jQuery)</script>
+        
    <style>html[dark]:not([style-scope]) :not(.style-scope),
 [dark]:not([style-scope]):not(.style-scope) {
   background-color: #222;
@@ -121,7 +122,7 @@ color:white;
           <ul class="headermen">
               <li><a href="articles.html">Статьи</a></li>
               <li><a href="contacts.html">Контакты</a></li>
-              <li> <button type="btn" class="change" id="btnId" onclick="ABOBAS()"><p class="btnp">Ночной режим</p></button></li>
+              <li> <button type="btn" class="change"><p class="btnp">Ночной режим</p></button></li>
        </ul>
       <a href ="index.html" class="headimg"><img class="headimg1" src="home1.png"></a>
           <a id="content" class="headermenuimg"></a>
@@ -134,7 +135,7 @@ color:white;
   <a href="index.html">Домой</a>
    <a href="articles.html">Статьи</a>
    <a href="contacts.html">Контакты</a>
-       <button type="btn" class="change" onclick="ABOBAS()"><p class="btnp">Ночной режим</p></button>
+       <button type="btn" class="change"><p class="btnp">Ночной режим</p></button>
   </div>
 </div>
            </div>
@@ -288,15 +289,6 @@ color:white;
               <a href ="https://twitter.com" class="item">Twitter</a>
             </div>
         </footer> 
-          <script>
-            function ABOBAS(){
-                console.log(111);
-                if(content.nodeType==1){
-                content.setAttribute("dark", true);
-                    concole.log(111);
-                }
-            }
-          </script>
         </body>
 
 </html>
